@@ -1,0 +1,16 @@
+# Site settings
+title: Joshua Soileau (swa-low) - Builder of Cool Things
+email: JoshuaSoileau@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Information & tutorials on web development, specifically CSS animations, with a tad bit of personal life stories.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://joshuasoileau.github.io" # the base hostname & protocol for your site
+twitter_username: joshua_soileau
+github_username:  Tiger0915
+
+# Build settings
+markdown: kramdown
+
+# Gems
+gems:
+  - octopress-autoprefixer
