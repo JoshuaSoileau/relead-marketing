@@ -1,23 +1,28 @@
 /**
  * Site header
  */
-body:before {
-    content: "";
-    display: block;
-    height: 56px;
-}
 
 .site-header {
-    min-height: 56px;
+    min-height: $header-height;
     position: fixed;
+    overflow: hidden;
     top: 0;
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(227, 228, 229, 0.4)), transparent;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 1px 0;
+
+    .wrapper {
+        /*position: relative;
+        z-index: 5;*/
+        transform: translate3d(0, 0, 0);
+        background: white;
+          background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), transparent;
+        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(227, 228, 229, 0.4)), transparent;
+    }
 }
 
 .site-title {
     font-size: 26px;
-    line-height: 56px;
+    line-height: $header-height;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -89,6 +94,20 @@ body:before {
             padding: 5px 10px;
         }
     }
+}
+
+#blurred {
+    position: absolute;
+    /*z-index: 1;*/
+    top: 0;
+    width: 100%;
+    filter: blur(6px);
+}
+
+#blur-wrap {
+    width: 100%;
+    height: 100%;
+    filter: url(#blur-effect);
 }
 
 
@@ -167,6 +186,7 @@ body:before {
  * Page content
  */
 .page-content {
+    margin-top: 56px;
     padding: $spacing-unit 0;
 }
 

@@ -10,6 +10,7 @@ $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$header-height: 70px;
 
 $spacing-unit:     30px;
 
@@ -20,6 +21,8 @@ $brand-color:      #2a7ae2;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$anim-duration:		300ms;
 
 // Width of the content area
 $content-width:    800px;
