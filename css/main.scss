@@ -6,13 +6,13 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$base-font-size:   21px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 $header-height: 70px;
 
-$spacing-unit:     30px;
+$spacing-unit:     2.5em;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -25,7 +25,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 $anim-duration:		300ms;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    700px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -49,6 +49,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+		"mixins",
+		"animations",
         "base",
         "layout",
         "syntax-highlighting"

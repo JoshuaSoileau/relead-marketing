@@ -5,23 +5,25 @@
 .site-header {
     min-height: $header-height;
     position: fixed;
+    z-index: 5;
     overflow: hidden;
     top: 0;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.08) 0 1px 0;
+    background: linear-gradient(270deg, #6d76fb, #e8d9b2, #5fd9ae, #3e9dff);
+    background-size: 800% 800%;
+    @include animation("scrollBG 30s ease infinite");
 
     .wrapper {
-        /*position: relative;
-        z-index: 5;*/
+        max-width: 100%;
         transform: translate3d(0, 0, 0);
-        background: white;
+        /*background: white;
           background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), transparent;
-        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(227, 228, 229, 0.4)), transparent;
+        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(227, 228, 229, 0.4)), transparent;*/
     }
 }
 
 .site-title {
-    font-size: 26px;
     line-height: $header-height;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -35,7 +37,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: $header-height;
 
     .menu-icon {
         display: none;
@@ -96,7 +98,23 @@
     }
 }
 
-#blurred {
+#blur {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin: 0 auto;
+    position: relative;
+
+    & + .wrapper {
+        color: white;
+        font-size: .8em;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+#blur-container {
     position: absolute;
     /*z-index: 1;*/
     top: 0;
@@ -104,10 +122,14 @@
     filter: blur(6px);
 }
 
-#blur-wrap {
+#blur-content {
     width: 100%;
     height: 100%;
     filter: url(#blur-effect);
+
+    .page-content > .wrapper {
+        padding: 0;
+    }
 }
 
 

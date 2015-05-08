@@ -1,7 +1,7 @@
 var pageContent = 	document.getElementById('page-content'),
 	winHeight 	= 	window.innerHeight,
-	blur		=	document.getElementById('blurred'),
-	blurWrap 	=	document.getElementById('blur-wrap'),
+	blur		=	document.getElementById('blur-container'),
+	blurWrap 	=	document.getElementById('blur-content'),
 	translationStyle; 
 
 
