@@ -101,7 +101,7 @@ a {
     &:after {
         content: "";
         display: block;
-        position: relative;
+        position: absolute;
         bottom: 0;
         left: 0;
         width: 0%;
@@ -218,4 +218,11 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+.home-logo {
+    font-size: 5em;
+    text-align: center;
+    margin: 1.25em 0;
 }

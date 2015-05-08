@@ -1,4 +1,5 @@
-var pageContent = 	document.getElementById('page-content'),
+var hdrContent	=	document.getElementById('post-header'),
+	pageContent = 	document.getElementById('page-content'),
 	winHeight 	= 	window.innerHeight,
 	blur		=	document.getElementById('blur-container'),
 	blurWrap 	=	document.getElementById('blur-content'),
@@ -9,7 +10,7 @@ var pageContent = 	document.getElementById('page-content'),
 // if not on mobile
 if(typeof window.orientation == 'undefined'){
 	// copy & paste content into blurred element
-	blurWrap.innerHTML = pageContent.outerHTML;
+	blurWrap.innerHTML = hdrContent.outerHTML + pageContent.outerHTML;
 	// manually set the hieght of the new content
 	blur.style.height = winHeight + 'px';
 
