@@ -197,7 +197,8 @@
 #post-header {
     margin-top: $header-height;
     color: white;
-    text-align: center;
+    text-align: center; 
+    -webkit-animation: scrollBG 30s ease infinite;
     animation: scrollBG 30s ease infinite;
 
     body > & {
@@ -251,6 +252,7 @@
     background: linear-gradient(270deg, #6d76fb, #e8d9b2, #5fd9ae, #3e9dff);
     background-size: 800% 800%;
     -webkit-animation: scrollBG 30s ease infinite;
+    animation: scrollBG 30s ease infinite;
 }
 
 .post-title {
