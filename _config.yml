@@ -9,7 +9,7 @@ twitter_username: joshua_soileau
 github_username:  JoshuaSoileau
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 # Gems
 gems:
