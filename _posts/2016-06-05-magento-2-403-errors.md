@@ -2,7 +2,7 @@
 layout: post
 title: "403 Errors on Magento 2"
 date:   2015-05-06 6:01:23
-categories: magento2, errors, apache
+categories: magento2 errors apache
 ---
 I installed a local version of [Magento 2](https://github.com/magento/magento2), but I was having issues validating the install, I was getting a 403 error on page load.
 
