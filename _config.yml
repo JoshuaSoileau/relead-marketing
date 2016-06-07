@@ -10,6 +10,7 @@ github_username:  JoshuaSoileau
 
 # Build settings
 markdown: redcarpet
+highlighter: rouge
 
 # Gems
 gems:
