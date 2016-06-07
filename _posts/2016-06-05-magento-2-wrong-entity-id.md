@@ -7,7 +7,7 @@ comments: true
 ---
 I recently tried using the Web UI to try to install [Magento 2](https://github.com/magento/magento2), but I was having issues on step 6.
 
-```console
+```Shell
 [ERROR] exception 'Magento\Framework\Exception\LocalizedException'
 with message 'Wrong entity ID' in
 /Volumes/Sites/my_site.dev/webroot/vendor/magento/module-eav/Setup/EavSetup.php:258

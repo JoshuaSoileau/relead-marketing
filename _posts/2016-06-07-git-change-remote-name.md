@@ -17,13 +17,13 @@ So I changed the remote name from `origin` to `josh`.
 
 # Use the `git remote rename` command to rename remotes (derh)
 
-```console
+```Shell
 git remote rename CURRENT_NAME NEW_NAME
 ```
 
 So I ran this:
 
-```console
+```Shell
 git remote rename origin josh
 ```
 
@@ -31,7 +31,7 @@ Good practice is to rename the base repo `upstream`. This is the practice github
 
 These examples are taken from [GitHub's awesome docs page](https://help.github.com/articles/renaming-a-remote/) on the same topic.
 
-```console
+```Shell
 git remote -v
 # View existing remotes
 origin  https://github.com/OWNER/REPOSITORY.git (fetch)

@@ -85,8 +85,7 @@ This is probably a `bad idea` and you should never do this on a live server (whi
 Then `chown` the magento 2 site to change it's ownership
 
 
-```console
-
+```Shell
 cd /path/to/sites
 sudo chown -R Josh:_www my_site.dev
 ```
