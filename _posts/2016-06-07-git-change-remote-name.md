@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Change a Remote Name in Git"
-date:   2015-05-06 6:01:23
+date:   2015-06-07 6:01:23
 categories: git
 comments: true
 ---
@@ -35,8 +35,8 @@ git remote -v
 origin  https://github.com/OWNER/REPOSITORY.git (fetch)
 origin  https://github.com/OWNER/REPOSITORY.git (push)
 
-git remote rename origin destination
-# Change remote name from 'origin' to 'destination'
+git remote rename origin upstream
+# Change remote name from 'origin' to 'upstream'
 
 git remote -v
 # Verify remote's new name
