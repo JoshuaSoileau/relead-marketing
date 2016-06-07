@@ -17,7 +17,7 @@ Server unable to read htaccess file, denying access to be safe
 
 I don't claim to be a DB administrator, so I searched on the webs for a solution and got nowhere fast. So I turned to my super smart coworker [Brent Jameson](http://www.jamesonnetworks.com/), who is a wizard. Apparently, I had to do a few things to my Apache configurations to get it to hit my `index.php`.
 
-##1. Specify `Allow from all` in my Virtual Hosts file
+## 1. Specify `Allow from all` in my Virtual Hosts file
 Turns out I had to add the `Allow` directive in my virtual hosts file.
 
 Edit your vhosts configuration in(in OSX):
@@ -49,7 +49,7 @@ So it becomes this:
 </VirtualHost>
 ```
 
-###2. Force Apache to use my user when hitting our site.
+### 2. Force Apache to use my user when hitting our site.
 Figure out your username. This is what we will tell Apache to load sites under. You can find your username by running:
 
 ```console
@@ -76,7 +76,7 @@ User Josh
 Group _www
 ```
 
-###2.b Change ownership of your magento 2 Directory
+### 2.b Change ownership of your magento 2 Directory
 This is probably a `bad idea` and you should never do this on a live server (which is true of pretty much everything in this post), but we're going to change ownership of the entire magento 2 directory system and assign it to you.
 
 `cd` into the parent directory containing all your websites (mine is `/Volumes/Sites/`).

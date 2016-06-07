@@ -34,7 +34,7 @@ Well, good luck finding more information on how that works, because Magento's de
 
 The 95% that is loaded by the server consists of lots & lots of individual blocks that combine to create the page's HTML, and those blocks can be cached.
 
-#**In Magento 2, elements can be cached on a block level.**
+# **In Magento 2, elements can be cached on a block level.**
 My research led me to Alan Kent's kickass [blog post](https://alankent.me/2014/12/09/magento-2-caching-overview/) about M2 cacheing.
 
 Individual blocks in M2's XML structure can be given individual expiration dates, by setting different TTL values on the block declarations.

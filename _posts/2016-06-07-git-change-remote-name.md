@@ -15,6 +15,8 @@ I wanted to change that, because I like my remotes to be named after their autho
 
 So I changed the remote name from `origin` to `josh`.
 
+# Use the `git remote rename` command to rename remotes (derh)
+
 ```console
 git remote rename CURRENT_NAME NEW_NAME
 ```
