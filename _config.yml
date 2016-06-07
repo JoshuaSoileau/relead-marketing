@@ -11,7 +11,8 @@ github_username:  JoshuaSoileau
 # Build settings
 markdown: kramdown
 kramdown:
-    highlighter: rouge
+  input: GFM
+  highlighter: rouge
 
 # Gems
 gems:
