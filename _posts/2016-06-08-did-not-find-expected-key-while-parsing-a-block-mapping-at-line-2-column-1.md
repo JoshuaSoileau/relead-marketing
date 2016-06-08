@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(<unknown>): did not find expected key while parsing a block mapping at line 2 column 1"
+title: "(unknown): did not find expected key while parsing a block mapping at line 2 column 1"
 description: Resolving issues with YAML frontmatter on jekyll post that cause errors on compilation.
 date: 2016-06-08
 tags: [ jekyll, YAML ]
