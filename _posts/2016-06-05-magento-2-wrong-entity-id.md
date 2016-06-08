@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Fix \"Wrong Entity ID\" Errors in a Magento 2 Install"
-date:   2015-05-06 6:01:23
+date:   2015-06-06 6:01:23
 categories: magento2 errors apache install
 comments: true
 ---
