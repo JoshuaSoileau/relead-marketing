@@ -17,11 +17,12 @@ I stumbled across [Katie Harron](https://pibby.com/)'s awesome [bash script](htt
 Awesome!
 
 I took that script and stuck it into a function in my `.zshrc` file, so now whenever I want to create a new posts, all I have to do is run
+
 ```Shell
 new-post
 ```
 
-Here's how to do the same.
+Here's how to do the same (if you aren't uzing `zsh`, do the same in your `.bashrc` file).
 
 # 1. Open your .zshrc file
 
