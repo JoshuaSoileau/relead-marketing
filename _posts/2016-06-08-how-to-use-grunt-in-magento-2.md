@@ -25,6 +25,10 @@ You should be in the root of the project. Make sure by running
 
 ```Shell
 ls
+```
+which will show something like this
+
+```Shell
 # ...
 # ...
 # package.json
@@ -40,6 +44,11 @@ If you `cat` the `package.json` file, you should see a JSON object of all of the
 
 ```Shell
 cat package.json
+```
+
+And you'll see the json object that looks something like this
+
+```Shell
 # ...
 # ...
 # "devDependencies": {
@@ -80,3 +89,14 @@ grunt less:<theme> should be used to compile .css files using symlinks from the 
 grunt watch. This command is designed for the LiveReload extension. It tracks changes in the source files, recompiles .css files, and reloads browser pages.
 ```
 ([source](https://firebearstudio.com/blog/magento-2-grunt.html))
+
+
+Most of the time you should be running
+
+```Shell
+grunt watch
+```
+
+Which will observe all of the `.less` files.
+
+When you change and save the files, this task will automatically recompile your `.less` into `.css` and reload your webpage through the `LiveReload` extension you installed in Step 3.
