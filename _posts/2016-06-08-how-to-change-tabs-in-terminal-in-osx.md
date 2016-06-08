@@ -13,7 +13,7 @@ Couldn't figure out the keyboard shortcut to swap between tabs in OSX's native t
 After googling, it turns out there is a built in keyboard
 shortcut, `F yeah!`
 
-# To change tabs in terminal in OSX
+## To change tabs in terminal in OSX
 
 `Shift` - `Cmd` - `Left or Right Arrows`
 

@@ -24,13 +24,13 @@ new-post
 
 Here's how to do the same (if you aren't uzing `zsh`, do the same in your `.bashrc` file).
 
-# 1. Open your .zshrc file
+## 1. Open your .zshrc file
 
 ```Shell
 vim ~/.zshrc
 ```
 
-# 2. Create a new function in that file
+#3 2. Create a new function in that file
 
 ```Shell
 new-post() {
@@ -38,7 +38,7 @@ new-post() {
 }
 ```
 
-# 3. Copy the [bash script](https://gist.github.com/pibby/6911493) from Katie Harron into that function
+## 3. Copy the [bash script](https://gist.github.com/pibby/6911493) from Katie Harron into that function
 
 ```Shell
 new-post() {
@@ -79,7 +79,7 @@ new-post() {
 }
 ```
 
-# 4. Remove the unwanted pieces.
+## 4. Remove the unwanted pieces.
 Maybe you don't want to fill in keywords for every post you do.
 
 In my case, I just removed the comments at the beginning, and the last line, which opens the new file in Sublime Text 2.
@@ -120,7 +120,7 @@ new-post() {
 }
 ```
 
-# 5. Change the path for the `filename` variable to the path for your local Jekyll project
+## 5. Change the path for the `filename` variable to the path for your local Jekyll project
 
 In my case, mine located at
 ```Shell
@@ -161,7 +161,7 @@ new-post() {
 }
 ```
 
-## And that's it!
+### And that's it!
 
 Here's how it is used
 

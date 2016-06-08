@@ -29,7 +29,7 @@ keywords: [asset repository] [magento 2]
 
 Can you see it?
 
-# The syntax for my `tags` and `keywords` is all wrong.
+## The syntax for my `tags` and `keywords` is all wrong.
 
 I stupidly assumed closed braces `[]`, were for allowing you to use tags will multiple words.
 

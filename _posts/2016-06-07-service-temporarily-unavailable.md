@@ -16,14 +16,14 @@ Confusing, since Magento 1 gave you a more helpful `MYSQL server has gone away` 
 
 Anyways, the solution was simply to start it.
 
-# 1. Start MYSQL server.
+## 1. Start MYSQL server.
 
  Open a terminal and run:
 
 ```console
 mysql.server start
 ```
-# 2. Delete `.maintenance.flag`, if it exists.
+## 2. Delete `.maintenance.flag`, if it exists.
 
 Check in your root M2 directory, for a file `var/.maintenance.flag`. This file is created when there are errors and the site should not be shown. Simply delete the file.
 
