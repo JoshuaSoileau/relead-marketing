@@ -1,10 +1,82 @@
 ---
-    layout: post
-    title: How to Use Grunt in Magento 2
-    description: How and where to use grunt and grunt commands in a base Magento 2 install
-    categories: articles
-    date: 2016-06-08
-    tags: [magento 2, grunt, cli]
-    keywords: [magento 2, grunt, cli]
-    image: 
-    ---
+layout: post
+title: How to Use Grunt in Magento 2
+description: How and where to use grunt and grunt commands in a base Magento 2 install
+categories: articles
+date: 2016-06-08
+tags: [magento 2, grunt, cli]
+keywords: [magento 2, grunt, cli]
+image:
+---
+
+Grunt comes bundled by default in all Magento 2 repositories.
+
+If you aren't familiar with what Grunt is or what it does, I suggest starting with Smashing Magazine's article on [getting started with grunt](https://www.smashingmagazine.com/2013/10/get-up-running-grunt/), Scotch.IO's [equivalent article](https://scotch.io/tutorials/a-simple-guide-to-getting-started-with-grunt), or even Grunt's [official getting started guide](http://gruntjs.com/getting-started).
+
+Now, we'll cover how to set up and run Grunt in a base Magento 2 installation.
+
+## 1. Install Grunt command line utility globally
+Open terminal and navigate to your Magento 2 directory, in the root.
+
+```Shell
+cd /path/to/magento/project
+```
+You should be in the root of the project. Make sure by running
+
+```Shell
+ls
+# ...
+# ...
+# package.json
+# ...
+# ...
+```
+You should see a package.json file.
+
+## 2. Install the Node Modules for your Magento 2 project
+Now we've got to install the node module dependencies that the site needs.
+
+If you `cat` the `package.json` file, you should see a JSON object of all of the node modules needed to run `grunt` tasks on the site.
+
+```Shell
+cat package.json
+# ...
+# ...
+# "devDependencies": {
+#         "glob": "^5.0.14",
+#         "grunt": "^0.4.5",
+# ...
+# ...
+```
+
+We've got to install all that.
+
+Simply run
+
+```Shell
+npm install
+```
+Which will search through that `package.json` folder and install the modules listed in it.
+
+
+## 3. Install the LiveReload browser extension
+This part is optional, but you want to do it. [LiveReload](http://livereload.com/) is a browser extension that will automatically pull in CSS changes in to the browser window without you having to refresh.
+
+Go [install it](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) now.
+
+## 3. Run Grunt commands
+Now that you've got it all installed, you can now run grunt commands.
+
+Grunt commands are run from the root directory in Magento 2.
+
+Run `grunt less` to verify it is set up properly.
+
+Here are a list of grunt commands you can run on a base M2 install
+
+```Shell
+grunt clean:<theme>. This command removes static files related to your theme in both pub/static and var directories.
+grunt exec:<theme>. This one republishes source files symlinks to pub/static/frontend/<Vendor>/<theme>/<locale>.
+grunt less:<theme> should be used to compile .css files using symlinks from the aforementioned directory.
+grunt watch. This command is designed for the LiveReload extension. It tracks changes in the source files, recompiles .css files, and reloads browser pages.
+```
+([source](https://firebearstudio.com/blog/magento-2-grunt.html))
