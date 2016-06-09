@@ -54,7 +54,7 @@ Navigate to your `My Account` dashboard.
 
 ![My Account Dropdown]({{ site.url }}/images/my-account-dropdown.png)
 
-Then navigate to `My Purchases` in the bottom left of the dashboard.
+Then navigate to `My Access Keys` in the bottom left of the dashboard.
 
 ![My Account Dropdown]({{ site.url }}/images/my-account-dashboard.png)
 
