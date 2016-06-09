@@ -100,3 +100,176 @@ grunt watch
 Which will observe all of the `.less` files.
 
 When you change and save the files, this task will automatically recompile your `.less` into `.css` and reload your webpage through the `LiveReload` extension you installed in Step 3.
+
+## If you get **Required config property missing** errors
+
+or
+
+## If running grunt watch starts grunt, but it doesn't appear to be "watch"ing the files in your new theme
+
+If you get errors that look like this
+
+```Shell
+Warning: Required config property "exec.my_theme" missing. Use --force to continue.
+
+Aborted due to warnings.
+```
+
+This is likely because you don't have the configuration for Grunt set up properly.
+
+In my case, I had installed grunt &amp; the node modules correctly, **but I failed to add my new theme to the themes.js gruntfile**.
+
+Remember to add your theme to the file
+
+```Shell
+dev/tools/grunt/configs/themes.js
+```
+
+It will look like this
+
+```Shell
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+'use strict';
+
+/**
+ * Define Themes
+ *
+ * area: area, one of (frontend|adminhtml|doc),
+ * name: theme name in format Vendor/theme-name,
+ * locale: locale,
+ * files: [
+ * 'css/styles-m',
+ * 'css/styles-l'
+ * ],
+ * dsl: dynamic stylesheet language (less|sass)
+ *
+ */
+module.exports = {
+    blank: {
+        area: 'frontend',
+        name: 'Magento/blank',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/email',
+            'css/email-inline'
+        ],
+        dsl: 'less'
+    },
+    luma: {
+        area: 'frontend',
+        name: 'Magento/luma',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
+    backend: {
+        area: 'adminhtml',
+        name: 'Magento/backend',
+        locale: 'en_US',
+        files: [
+            'css/styles-old',
+            'css/styles'
+        ],
+        dsl: 'less'
+    }
+};
+
+```
+
+In my case, I wanted to add a new theme called `my_theme`, so I added this to that file
+
+```Shell
+my_theme: {
+    area: 'frontend',
+    name: 'my_company/my_theme',
+    locale: 'en_US',
+    files: [
+        'css/styles-m',
+        'css/styles-t',
+        'css/styles-l'
+    ],
+    dsl: 'less'
+},
+```
+
+Here's what it looks like all together
+
+```Shell
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+'use strict';
+
+/**
+ * Define Themes
+ *
+ * area: area, one of (frontend|adminhtml|doc),
+ * name: theme name in format Vendor/theme-name,
+ * locale: locale,
+ * files: [
+ * 'css/styles-m',
+ * 'css/styles-l'
+ * ],
+ * dsl: dynamic stylesheet language (less|sass)
+ *
+ */
+module.exports = {
+    blank: {
+        area: 'frontend',
+        name: 'Magento/blank',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/email',
+            'css/email-inline'
+        ],
+        dsl: 'less'
+    },
+    luma: {
+        area: 'frontend',
+        name: 'Magento/luma',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
+    my_theme: {
+        area: 'frontend',
+        name: 'my_company/my_theme',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-t',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
+    backend: {
+        area: 'adminhtml',
+        name: 'Magento/backend',
+        locale: 'en_US',
+        files: [
+            'css/styles-old',
+            'css/styles'
+        ],
+        dsl: 'less'
+    }
+};
+
+```
+
+After adding this theme to my grunt themes.js file, it started observing my file changes properly.
