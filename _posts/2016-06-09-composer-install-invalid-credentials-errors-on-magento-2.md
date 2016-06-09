@@ -29,7 +29,9 @@ Invalid credentials for 'https://repo.magento.com/archives/magento/module-sales-
 
 This is because this module requires developer creds to download it.
 
-In your Magento 2root directory, there should be a file called `auth.json` (if it isn't there, create it).
+## The username &amp; password in your auth.json file are incorrect.
+
+In your Magento 2 `root` directory, there should be a file called `auth.json` (if it isn't there, create it).
 
 And it's contents should look like this:
 
@@ -45,6 +47,8 @@ And it's contents should look like this:
 ```
 
 You need to generate a new username and PW.
+
+## Get new credentials from the Magento 2 marketplace
 
 Go [here](http://devdocs.magento.com/guides/v2.0/install-gde/prereq/dev_install.html#instgde-prereq-compose-clone) and log in.
 
