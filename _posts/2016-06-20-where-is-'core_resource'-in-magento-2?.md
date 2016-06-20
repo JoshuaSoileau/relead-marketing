@@ -9,7 +9,7 @@ keywords: [core_resource, setup_module, magento 2]
 image:
 ---
 
-In `Magento 1`, the `core_resource` table listed all of the installed modules in their versions.
+In `Magento 1`, the `core_resource` table listed all of the installed modules and their versions.
 
 Well that table is gone in `Magento 2`, because their data architecture was completely re-architected
 
