@@ -7,6 +7,7 @@ date: 2016-06-20
 tags: [Magento 2, CLI, MYSQL]
 keywords: [core_resource, setup_module, magento 2]
 image:
+comments: true
 ---
 
 In `Magento 1`, the `core_resource` table listed all of the installed modules and their versions.
