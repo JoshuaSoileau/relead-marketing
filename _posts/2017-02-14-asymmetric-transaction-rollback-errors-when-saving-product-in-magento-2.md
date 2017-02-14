@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "\"Asymmetric transaction rollback.\" errors when saving product in Magento 2 "
-date:   2015-06-06 6:01:23
+date:   2017-02-14 6:01:23
 categories: magento2 errors apache
 comments: true
 ---
