@@ -12,7 +12,7 @@ I got this error when trying to update a product in the admin, using a DB I took
 Asymmetric transaction rollback.
 ```
 
-(This)[http://magento.stackexchange.com/questions/110976/new-product-asymmetric-transaction-rollback-error] stackoverflow question led me to (this)[http://magento.stackexchange.com/a/159650/36660] answer which solved my problem.
+[This](http://magento.stackexchange.com/questions/110976/new-product-asymmetric-transaction-rollback-error) stackoverflow question led me to [this](http://magento.stackexchange.com/a/159650/36660) answer which solved my problem.
 
 Turns out if you have Elasticsearch set as your search engine, you'll get this error on product save.
 
