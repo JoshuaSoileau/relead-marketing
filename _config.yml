@@ -1,10 +1,11 @@
 # Site settings
-title: Joshua Soileau (swa-low) - Frontend Web Developer
-email: joshua.soileau@gmail.com
+title: reLead - Marketing Funnels for Realtors
+email: josh@getrelead.com
 description: > # this means to ignore newlines until "baseurl:"
-  Information & tutorials on web development, Magento 1/2, CSS animation, and web stuff.
+  Pre-built marketing funnels for realtors.
+  Fill in your content in our battle-tested landing pages, and get new leads texted to you instantly
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.joshuasoileau.com" # the base hostname & protocol for your site
+url: "http://www.getrelead.com" # the base hostname & protocol for your site
 twitter_username: joshua_soileau
 github_username:  JoshuaSoileau
 
